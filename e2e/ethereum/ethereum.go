@@ -11,14 +11,6 @@ import (
 	"testing"
 	"time"
 
-	bridge "github.com/ChainSafe/ChainBridge/bindings/Bridge"
-	"github.com/ChainSafe/ChainBridge/chains/ethereum"
-	utils "github.com/ChainSafe/ChainBridge/shared/ethereum"
-	ethtest "github.com/ChainSafe/ChainBridge/shared/ethereum/testing"
-	"github.com/ChainSafe/chainbridge-utils/core"
-	"github.com/ChainSafe/chainbridge-utils/crypto/secp256k1"
-	"github.com/ChainSafe/chainbridge-utils/keystore"
-	"github.com/ChainSafe/chainbridge-utils/msg"
 	"github.com/ChainSafe/log15"
 	eth "github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
@@ -26,6 +18,14 @@ import (
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/ethereum/go-ethereum/rpc"
+	bridge "github.com/parami-protocol/ChainBridge/bindings/Bridge"
+	"github.com/parami-protocol/ChainBridge/chains/ethereum"
+	utils "github.com/parami-protocol/ChainBridge/shared/ethereum"
+	ethtest "github.com/parami-protocol/ChainBridge/shared/ethereum/testing"
+	"github.com/parami-protocol/chainbridge-utils/core"
+	"github.com/parami-protocol/chainbridge-utils/crypto/secp256k1"
+	"github.com/parami-protocol/chainbridge-utils/keystore"
+	"github.com/parami-protocol/chainbridge-utils/msg"
 )
 
 var TestTimeout = time.Second * 30

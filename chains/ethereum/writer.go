@@ -4,11 +4,11 @@
 package ethereum
 
 import (
-	"github.com/ChainSafe/ChainBridge/bindings/Bridge"
-	"github.com/ChainSafe/chainbridge-utils/core"
-	metrics "github.com/ChainSafe/chainbridge-utils/metrics/types"
-	"github.com/ChainSafe/chainbridge-utils/msg"
 	"github.com/ChainSafe/log15"
+	"github.com/parami-protocol/ChainBridge/bindings/Bridge"
+	"github.com/parami-protocol/chainbridge-utils/core"
+	metrics "github.com/parami-protocol/chainbridge-utils/metrics/types"
+	"github.com/parami-protocol/chainbridge-utils/msg"
 )
 
 var _ core.Writer = &writer{}

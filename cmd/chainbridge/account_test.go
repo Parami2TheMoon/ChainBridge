@@ -15,10 +15,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ChainSafe/chainbridge-utils/crypto/sr25519/known_network_ids"
+	"github.com/parami-protocol/chainbridge-utils/crypto/sr25519/known_network_ids"
 
-	"github.com/ChainSafe/chainbridge-utils/crypto"
-	"github.com/ChainSafe/chainbridge-utils/keystore"
+	"github.com/parami-protocol/chainbridge-utils/crypto"
+	"github.com/parami-protocol/chainbridge-utils/keystore"
 	"github.com/stretchr/testify/require"
 	"github.com/urfave/cli/v2"
 )

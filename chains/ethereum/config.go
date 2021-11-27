@@ -8,11 +8,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ChainSafe/ChainBridge/connections/ethereum/egs"
-	utils "github.com/ChainSafe/ChainBridge/shared/ethereum"
-	"github.com/ChainSafe/chainbridge-utils/core"
-	"github.com/ChainSafe/chainbridge-utils/msg"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/parami-protocol/ChainBridge/connections/ethereum/egs"
+	utils "github.com/parami-protocol/ChainBridge/shared/ethereum"
+	"github.com/parami-protocol/chainbridge-utils/core"
+	"github.com/parami-protocol/chainbridge-utils/msg"
 )
 
 const DefaultGasLimit = 6721975

@@ -8,9 +8,9 @@ import (
 	"reflect"
 	"testing"
 
-	utils "github.com/ChainSafe/ChainBridge/shared/ethereum"
-	"github.com/ChainSafe/chainbridge-utils/core"
 	"github.com/ethereum/go-ethereum/common"
+	utils "github.com/parami-protocol/ChainBridge/shared/ethereum"
+	"github.com/parami-protocol/chainbridge-utils/core"
 )
 
 //TestParseChainConfig tests parseChainConfig with all handlerContracts provided

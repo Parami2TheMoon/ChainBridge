@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
-	ethtest "github.com/ChainSafe/ChainBridge/shared/ethereum/testing"
-	"github.com/ChainSafe/chainbridge-utils/core"
-	"github.com/ChainSafe/chainbridge-utils/keystore"
-	"github.com/ChainSafe/chainbridge-utils/msg"
 	"github.com/ethereum/go-ethereum/common"
 	ethcrypto "github.com/ethereum/go-ethereum/crypto"
+	ethtest "github.com/parami-protocol/ChainBridge/shared/ethereum/testing"
+	"github.com/parami-protocol/chainbridge-utils/core"
+	"github.com/parami-protocol/chainbridge-utils/keystore"
+	"github.com/parami-protocol/chainbridge-utils/msg"
 )
 
 func TestChain_ListenerShutdownOnFailure(t *testing.T) {

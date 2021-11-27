@@ -8,11 +8,11 @@ import (
 	"math/big"
 	"testing"
 
-	utils "github.com/ChainSafe/ChainBridge/shared/substrate"
-	"github.com/ChainSafe/chainbridge-utils/msg"
 	"github.com/ChainSafe/log15"
-	"github.com/centrifuge/go-substrate-rpc-client/v3/signature"
-	"github.com/centrifuge/go-substrate-rpc-client/v3/types"
+	"github.com/centrifuge/go-substrate-rpc-client/v4/signature"
+	"github.com/centrifuge/go-substrate-rpc-client/v4/types"
+	utils "github.com/parami-protocol/ChainBridge/shared/substrate"
+	"github.com/parami-protocol/chainbridge-utils/msg"
 )
 
 func CreateClient(t *testing.T, key *signature.KeyringPair, endpoint string) *utils.Client {

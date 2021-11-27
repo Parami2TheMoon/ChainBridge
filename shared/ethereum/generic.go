@@ -8,9 +8,9 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/ChainSafe/ChainBridge/bindings/GenericHandler"
-	"github.com/ChainSafe/chainbridge-utils/msg"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/parami-protocol/ChainBridge/bindings/GenericHandler"
+	"github.com/parami-protocol/chainbridge-utils/msg"
 )
 
 var StoreFunctionSig = CreateFunctionSignature("store(bytes32)")

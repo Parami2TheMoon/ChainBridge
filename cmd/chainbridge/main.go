@@ -3,7 +3,7 @@
 /*
 Provides the command-line interface for the chainbridge application.
 
-For configuration and CLI commands see the README: https://github.com/ChainSafe/ChainBridge.
+For configuration and CLI commands see the README: https://github.com/parami-protocol/ChainBridge.
 */
 package main
 
@@ -15,14 +15,14 @@ import (
 
 	"strconv"
 
-	"github.com/ChainSafe/ChainBridge/chains/ethereum"
-	"github.com/ChainSafe/ChainBridge/chains/substrate"
-	"github.com/ChainSafe/ChainBridge/config"
-	"github.com/ChainSafe/chainbridge-utils/core"
-	"github.com/ChainSafe/chainbridge-utils/metrics/health"
-	metrics "github.com/ChainSafe/chainbridge-utils/metrics/types"
-	"github.com/ChainSafe/chainbridge-utils/msg"
 	log "github.com/ChainSafe/log15"
+	"github.com/parami-protocol/ChainBridge/chains/ethereum"
+	"github.com/parami-protocol/ChainBridge/chains/substrate"
+	"github.com/parami-protocol/ChainBridge/config"
+	"github.com/parami-protocol/chainbridge-utils/core"
+	"github.com/parami-protocol/chainbridge-utils/metrics/health"
+	metrics "github.com/parami-protocol/chainbridge-utils/metrics/types"
+	"github.com/parami-protocol/chainbridge-utils/msg"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/urfave/cli/v2"
 )
