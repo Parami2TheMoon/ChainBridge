@@ -165,3 +165,75 @@ func (w *writer) createGenericProposal(m msg.Message) (*proposal, error) {
 		method:       method,
 	}, nil
 }
+
+type FungibleTransferItem struct {
+	Destination  types.U8
+	DepositNonce types.U64
+	ResourceId   types.Bytes32
+	Amount       types.U256
+	Recipient    types.Bytes
+}
+
+type NonFungibleTransferItem struct {
+	Destination  types.U8
+	DepositNonce types.U64
+	ResourceId   types.Bytes32
+	TokenId      types.Bytes
+	Recipient    types.Bytes
+	Metadata     types.Bytes
+}
+
+type GenericTransferItem struct {
+	Destination  types.U8
+	DepositNonce types.U64
+	ResourceId   types.Bytes32
+	Metadata     types.Bytes
+}
+
+
+type BridgeEvents []BridgeEvent
+
+type BridgeEvent struct {
+	IsFungible          bool
+	FungibleTransfer    FungibleTransferItem
+	IsNonFungible       bool
+	NonFungibleTransfer NonFungibleTransferItem
+	IsGeneric           bool
+	GenericTransfer     GenericTransferItem
+}
+
+func (m *BridgeEvent) Decode(decoder scale.Decoder) error {
+	b, err := decoder.ReadOneByte()
+
+	if err != nil {
+		return err
+	}
+
+	if b == 0 {
+		m.IsFungible = true
+		dfungible := FungibleTransferItem{}
+		err = decoder.Decode(&dfungible)
+		if err != nil {
+			return err
+		}
+		m.FungibleTransfer = dfungible
+	} else if b == 1 {
+		m.IsNonFungible = true
+		dnonfungible := NonFungibleTransferItem{}
+		err = decoder.Decode(&dnonfungible)
+		if err != nil {
+			return err
+		}
+		m.NonFungibleTransfer = dnonfungible
+	} else if b == 2 {
+		m.IsGeneric = true
+		dgeneric := GenericTransferItem{}
+		err = decoder.Decode(&dgeneric)
+		if err != nil {
+			return err
+		}
+		m.GenericTransfer = dgeneric
+	}
+
+	return nil
+}
