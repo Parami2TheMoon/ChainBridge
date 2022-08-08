@@ -11,7 +11,7 @@ require (
 	github.com/parami-protocol/chainbridge-substrate-events v0.0.0-20211213075748-35f824c109df
 	github.com/parami-protocol/chainbridge-utils v0.0.0-20211213075828-5468bae703cc
 	github.com/prometheus/client_golang v1.11.0
-	github.com/stretchr/testify v1.7.0
+	github.com/stretchr/testify v1.8.0
 	github.com/urfave/cli/v2 v2.3.0
 )
 
@@ -56,5 +56,5 @@ require (
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
 	google.golang.org/protobuf v1.26.0-rc.1 // indirect
 	gopkg.in/natefinch/npipe.v2 v2.0.0-20160621034901-c1b8fa8bdcce // indirect
-	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
