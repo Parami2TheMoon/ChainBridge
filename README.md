@@ -1,3 +1,8 @@
+# Archiving notice:
+
+This library is no longer in use and maintenance. All further development related to chainbridge will happen in the [new](https://github.com/ChainSafe/chainbridge-core) repo. More detailed information about chainbridge-core you can find in its readme or [Discussions](https://github.com/ChainSafe/chainbridge-core/discussions). 
+
+If you already running an old ChainBridge version please consider checking **[chainbridge-migration](https://github.com/ChainSafe/chainbridge-migration)** scripts that allow migrating to a newer version of chainbridge.
 # ChainBridge
 
 <a href="https://discord.gg/ykXsJKfhgq">
@@ -122,7 +127,7 @@ To use secure keys, see `chainbridge accounts --help`. The keystore password can
 
 To import external ethereum keys, such as those generated with geth, use `chainbridge accounts import --ethereum /path/to/key`.
 
-To import private keys as keystores, use `chainbridge account import --privateKey key`.
+To import private keys as keystores, use `chainbridge accounts import --privateKey key`.
 
 For testing purposes, chainbridge provides 5 test keys. The can be used with `--testkey <name>`, where `name` is one of `Alice`, `Bob`, `Charlie`, `Dave`, or `Eve`.
 
